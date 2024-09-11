@@ -1,0 +1,41 @@
+{
+  "name": "bdd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run",
+    "headTest": "npm run test --headed",
+    "chromeTest": "npm run test --browser chrome"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "step_definitions": "cypress/integration/examples/BDD/Step_Definitions",
+
+    "json": {
+      "enabled": true,
+      "output": "cypress/cucumberReports/results.json",
+      "formatter": "cucumber-json-formatter"
+    },
+    "html": {
+    "enabled": true,
+    "output": "cypress/cucumber-html/cucumber-html.html"
+  },
+  "messages": {
+    "enabled": true,
+    "output": "cypress/messages.ndjson"
+  }
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cypress": "^13.14.1",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "multiple-cucumber-html-reporter": "^3.7.0"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.1.2",
+    "cucumber-json-report-formatter": "^0.1.4"
+  }
+}

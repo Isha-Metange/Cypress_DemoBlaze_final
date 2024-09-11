@@ -1,0 +1,16 @@
+{
+  "signUpUsername": "test@123",
+  "signUpPassword": "test@123",
+  
+  "loginUsername": "test@123",
+  "loginPassword": "test@123",
+
+  "name":"Riya",
+  "country":"India",
+  "city":"Ahmedabad",
+  "creditcard":"Rupay",
+  "month":"August",
+  "year":"2024"
+  
+}
+
